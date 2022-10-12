@@ -21,7 +21,6 @@ public class LineReader<T> {
         BufferedReader br = new BufferedReader(new FileReader(filename));
 
         String str;
-        //첫 줄 날려줘야함
         br.readLine();
         while ((str=br.readLine()) != null) {
             result.add(parser.parse(str));
